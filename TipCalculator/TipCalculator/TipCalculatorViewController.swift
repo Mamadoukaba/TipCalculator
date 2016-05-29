@@ -33,7 +33,7 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
         amountBeforeTaxTextField.text = String(format: "%0.2f", arguments: [tipCalc.amountBeforeTax])
         tipPercentageLabel.text = String(format: "Tip %d%%:", arguments: [Int(tipCalc.tipPercentage * 100)])
         indivdualResultsLabel.text = String(format: "Each: $%0.2f", arguments:[(tipCalc.totalAmount / numberOfPeopleSlider.value)])
-        numberOfPeopleLabel.text = "\(Int(numberOfPeopleSlider.value))"
+        numberOfPeopleLabel.text = String(format: "Split: %02d", Int(numberOfPeopleSlider.value))
         
     }
  
@@ -80,7 +80,7 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
     
     // Split Label Control Events
     @IBAction func splitNumberChanged(sender: AnyObject) {
-        numberOfPeopleLabel.text = "\(Int(numberOfPeopleSlider.value))"
+        numberOfPeopleLabel.text = String(format: "Split: %02d", Int(numberOfPeopleSlider.value))
         calcTip()
     }
     

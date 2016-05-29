@@ -116,7 +116,7 @@
                     <connections>
                         <outlet property="amountBeforeTaxTextField" destination="QiM-gD-f8X" id="nVh-Re-xzN"/>
                         <outlet property="indivdualResultsLabel" destination="o52-KM-Ewx" id="wlY-qP-GG3"/>
-                        <outlet property="numberOfPeopleLabel" destination="o52-KM-Ewx" id="DwF-bt-eGx"/>
+                        <outlet property="numberOfPeopleLabel" destination="Ivw-au-GOT" id="1k0-xQ-vJk"/>
                         <outlet property="numberOfPeopleSlider" destination="5Zd-T3-Tiq" id="xeV-yY-uFi"/>
                         <outlet property="resultsLabel" destination="1Ic-aC-9iH" id="tlR-NC-95H"/>
                         <outlet property="tipPercentageLabel" destination="6pY-6o-ldJ" id="aPL-32-Rrj"/>
